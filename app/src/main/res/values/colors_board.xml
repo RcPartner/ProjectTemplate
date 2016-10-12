@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 颜色对照表 -->
+    <color name="color_no_1_red">#ff4646</color>
+    <color name="color_no_2_orange">#ffaa46</color>
+    <color name="color_no_3_green">#37b877</color>
+    <color name="color_no_4_blue">#2093ee</color>
+    <color name="color_no_5_blue">#4099e5</color>
+    <color name="color_no_6_gray">#333333</color>
+    <color name="color_no_7_gray">#666666</color>
+    <color name="color_no_8_gray">#8e8e8e</color>
+    <color name="color_no_9_gray">#999999</color>
+    <color name="color_no_10_gray">#d1d1d1</color>
+    <color name="color_no_11_gray">#d7d7d7</color>
+    <color name="color_no_12_gray">#e6e6e6</color>
+    <color name="color_no_13_gray">#f0f0f0</color>
+    <color name="color_no_14_gray">#f2f2f2</color>
+    <color name="color_no_15_gray">#f8f8f8</color>
+    <color name="color_no_16_yellow">#ffa800</color>
+    <color name="color_no_17_blue">#2093ee</color>
+</resources>

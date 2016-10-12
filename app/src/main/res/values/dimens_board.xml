@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 尺寸对照表 -->
+    <dimen name="text_size_no_a">22dp</dimen>
+    <dimen name="text_size_no_b">18dp</dimen>
+    <dimen name="text_size_no_c">15.33dp</dimen>
+    <dimen name="text_size_no_d">14dp</dimen>
+    <dimen name="text_size_no_e">12dp</dimen>
+    <dimen name="text_size_no_f">10.667dp</dimen>
+
+</resources>

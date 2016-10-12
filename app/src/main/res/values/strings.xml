@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ProjectTemplate</string>
+    <!--最新揭晓-->
+    <string name="apf_announce_time">揭晓时间：%s</string>
+    <string name="apf_buy_num">参与人次：%s</string>
+    <string name="apf_lucky_user">获&#160;&#160;得&#160;&#160;者：%s</string>
+    <string name="apf_act_id">期&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号：%s</string>
+    <string name="apf_announcing">即将揭晓</string>
+    <string name="apf_lucky_num">幸运号码：%s</string>
+    <string name="apf_title">最新揭晓</string>
+    <string name="apf_wait_announce">等待揭晓</string>
+    <string name="ma_tab1">首页</string>
+    <string name="ma_tab2">分类</string>
+    <string name="ma_tab3">购物车</string>
+    <string name="ma_tab4">我的</string>
+</resources>

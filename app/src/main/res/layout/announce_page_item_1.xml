@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.rc.projecttemplate.app.announce.AnnounceViewModel" />
+
+        <variable
+            name="announceViewModel"
+            type="AnnounceViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_size_small"
+        android:paddingLeft="@dimen/padding_size_small"
+        android:paddingRight="@dimen/padding_size_small"
+        android:paddingTop="@dimen/padding_size_min"
+        android:visibility="@{announceViewModel.entity == null ? View.GONE: View.VISIBLE}"
+        tools:layout_width="200dp">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:paddingBottom="@dimen/padding_size_supersmall"
+            android:paddingTop="@dimen/padding_size_min"
+            android:text="@{announceViewModel.goodsTitle}"
+            android:textColor="@color/color_no_6_gray"
+            android:textSize="@dimen/text_size_no_e"
+            tools:text="4445646546546546546545645645646546546546546556456465465" />
+
+        <TextView
+            android:id="@+id/tv_act_id"
+            style="@style/APFActIdText"
+            android:text="@{announceViewModel.actId}"
+            tools:text="@string/apf_act_id" />
+
+        <TextView
+            android:id="@+id/tv_lucky_user"
+            style="@style/APFActIdText"
+            android:text="@{announceViewModel.luckUser}"
+            android:visibility="@{announceViewModel.announced ? View.VISIBLE:View.GONE}"
+            tools:text="@string/apf_lucky_user"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_buy_num"
+            style="@style/APFActIdText"
+            android:text="@{announceViewModel.buyNum}"
+            android:visibility="gone"
+            tools:text="@string/apf_buy_num"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_lucky_num"
+            style="@style/APFActIdText"
+            android:text="@{announceViewModel.luckNumber}"
+            android:visibility="@{announceViewModel.announced ? View.VISIBLE:View.GONE}"
+            tools:text="@string/apf_lucky_num"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_announce_time"
+            style="@style/APFActIdText"
+            android:text="@{announceViewModel.updateTime}"
+            android:visibility="@{announceViewModel.announced ? View.VISIBLE:View.GONE}"
+            tools:text="@string/apf_announce_time"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_announcing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/padding_size_limitsmall"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingTop="@dimen/padding_size_supersmall"
+            android:text="@string/apf_announcing"
+            android:textColor="@color/color_no_1_red"
+            android:textSize="@dimen/text_size_no_e"
+            android:textStyle="bold"
+            android:visibility="@{announceViewModel.announcing ? View.VISIBLE:View.GONE}" />
+
+        <TextView
+            android:id="@+id/tv_count_down_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@{announceViewModel.countDownTime}"
+            android:textColor="@color/color_no_1_red"
+            android:textSize="24dp"
+            android:visibility="@{announceViewModel.announcing ? View.VISIBLE:View.GONE}"
+            tools:text="44:12:20" />
+    </LinearLayout>
+</layout>
